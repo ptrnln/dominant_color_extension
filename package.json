@@ -1,0 +1,16 @@
+{
+  "type": "commonjs",
+  "scripts": {
+    "build": "rollup --config"
+  },
+  "dependencies": {
+    "@types/chrome": "^0.0.299",
+    "html2canvas": "^1.4.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@types/node": "^22.10.10",
+    "rollup": "^4.31.0"
+  }
+}

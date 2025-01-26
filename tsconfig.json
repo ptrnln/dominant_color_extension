@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "module": "CommonJS",
+        "outDir": "dist/",
+        "skipLibCheck": true
+    },
+    "include": ["src/**/*", "dist/scripts/run.js"],
+    "exclude": ["node_modules/**/*"]
+}

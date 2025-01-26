@@ -1,6 +1,6 @@
 {
     "name": "Dominant Color Extension",
-    "description": "Base Level Extension",
+    "description": "An extension that determines the dominant color of a web page",
     "version": "1.0",
     "manifest_version": 3,
     "action": {
@@ -8,6 +8,27 @@
         "default_icon": "icon.png"
     },
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "pageCapture",
+        "tabCapture",
+        "scripting",
+        "tabs",
+        "debugger"
+    ],
+    "content_scripts": [
+        {
+            "world": "MAIN",
+            "js": ["bundle.js"],
+            "run_at": "document_start",
+            "matches": [
+                "<all_urls>"
+            ]
+        },
+        {
+            "js": ["dist/scripts/run.js"],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
     ]
 }
